@@ -12,6 +12,8 @@
 		A1FF8477233D03FA00DCE73E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1FF8476233D03FA00DCE73E /* Assets.xcassets */; };
 		A1FF847A233D03FA00DCE73E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1FF8479233D03FA00DCE73E /* Preview Assets.xcassets */; };
 		A1FF847D233D03FA00DCE73E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FF847B233D03FA00DCE73E /* Main.storyboard */; };
+		A1FF8486233D043900DCE73E /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF8485233D043900DCE73E /* CustomTextView.swift */; };
+		A1FF848A233D092E00DCE73E /* CustomTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FF8489233D092E00DCE73E /* CustomTextContainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,10 @@
 		A1FF847C233D03FA00DCE73E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1FF847E233D03FA00DCE73E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1FF847F233D03FA00DCE73E /* NGTextViewCustomBackgroundDrawingExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NGTextViewCustomBackgroundDrawingExample.entitlements; sourceTree = "<group>"; };
+		A1FF8485233D043900DCE73E /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		A1FF8487233D092E00DCE73E /* NGTextViewCustomBackgroundDrawingExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NGTextViewCustomBackgroundDrawingExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1FF8488233D092E00DCE73E /* CustomTextContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextContainer.h; sourceTree = "<group>"; };
+		A1FF8489233D092E00DCE73E /* CustomTextContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				A1FF847E233D03FA00DCE73E /* Info.plist */,
 				A1FF847F233D03FA00DCE73E /* NGTextViewCustomBackgroundDrawingExample.entitlements */,
 				A1FF8478233D03FA00DCE73E /* Preview Content */,
+				A1FF8485233D043900DCE73E /* CustomTextView.swift */,
+				A1FF8488233D092E00DCE73E /* CustomTextContainer.h */,
+				A1FF8489233D092E00DCE73E /* CustomTextContainer.m */,
+				A1FF8487233D092E00DCE73E /* NGTextViewCustomBackgroundDrawingExample-Bridging-Header.h */,
 			);
 			path = NGTextViewCustomBackgroundDrawingExample;
 			sourceTree = "<group>";
@@ -106,6 +116,7 @@
 				TargetAttributes = {
 					A1FF846E233D03F800DCE73E = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -147,6 +158,8 @@
 			files = (
 				A1FF8475233D03F800DCE73E /* ContentView.swift in Sources */,
 				A1FF8473233D03F800DCE73E /* AppDelegate.swift in Sources */,
+				A1FF8486233D043900DCE73E /* CustomTextView.swift in Sources */,
+				A1FF848A233D092E00DCE73E /* CustomTextContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = NGTextViewCustomBackgroundDrawingExample/NGTextViewCustomBackgroundDrawingExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -296,6 +310,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.noahgilmore.NGTextViewCustomBackgroundDrawingExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NGTextViewCustomBackgroundDrawingExample/NGTextViewCustomBackgroundDrawingExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -304,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = NGTextViewCustomBackgroundDrawingExample/NGTextViewCustomBackgroundDrawingExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -319,6 +336,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.noahgilmore.NGTextViewCustomBackgroundDrawingExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NGTextViewCustomBackgroundDrawingExample/NGTextViewCustomBackgroundDrawingExample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
